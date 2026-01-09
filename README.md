@@ -88,7 +88,8 @@ tech-compare/
 ├── styles.css          # Professional styling and responsive design
 ├── data.js             # Comprehensive comparison data and logic
 ├── app.js              # Interactive application functionality
-└── README.md           # This file
+├──README.md            # This file
+└── .kiro               # Project configuration and development guidelines
 ```
 
 ## 🎨 Design Principles
@@ -174,4 +175,5 @@ If you find this tool helpful, please:
 
 
 **Built to help developers make informed technology decisions • No single "best" answer, just balanced insights**
+
 
