@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Compare - Make Informed Technology Decisions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">⚖️ Tech Stack Comparison</h1>
+                <p class="tagline">Make informed technology decisions with balanced comparisons</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Comparison Selection -->
+            <section id="selection-view" class="view active">
+                <div class="selection-header">
+                    <h2>Choose a Technology Comparison</h2>
+                    <p>Select from our curated comparisons to get balanced insights</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <!-- Frontend Frameworks -->
+                    <div class="category-section">
+                        <h3 class="category-title">Frontend Frameworks</h3>
+                        <div class="comparison-cards">
+                            <div class="comparison-card" data-comparison="react-vue">
+                                <div class="card-header">
+                                    <h4>React vs Vue.js</h4>
+                                    <span class="category-badge">Frontend</span>
+                                </div>
+                                <p>Ecosystem leader vs Beginner-friendly framework</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="comparison-card" data-comparison="react-angular">
+                                <div class="card-header">
+                                    <h4>React vs Angular</h4>
+                                    <span class="category-badge">Frontend</span>
+                                </div>
+                                <p>Flexible library vs Full-featured framework</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="comparison-card" data-comparison="vue-svelte">
+                                <div class="card-header">
+                                    <h4>Vue.js vs Svelte</h4>
+                                    <span class="category-badge">Frontend</span>
+                                </div>
+                                <p>Gentle learning curve vs Performance champion</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Beginner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Frameworks -->
+                    <div class="category-section">
+                        <h3 class="category-title">Backend Frameworks</h3>
+                        <div class="comparison-cards">
+                            <div class="comparison-card" data-comparison="express-fastapi">
+                                <div class="card-header">
+                                    <h4>Express.js vs FastAPI</h4>
+                                    <span class="category-badge">Backend</span>
+                                </div>
+                                <p>Node.js flexibility vs Modern Python APIs</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="comparison-card" data-comparison="django-rails">
+                                <div class="card-header">
+                                    <h4>Django vs Rails</h4>
+                                    <span class="category-badge">Backend</span>
+                                </div>
+                                <p>Python batteries-included vs Ruby rapid development</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="category-section">
+                        <h3 class="category-title">Databases</h3>
+                        <div class="comparison-cards">
+                            <div class="comparison-card" data-comparison="postgres-mongo">
+                                <div class="card-header">
+                                    <h4>PostgreSQL vs MongoDB</h4>
+                                    <span class="category-badge">Database</span>
+                                </div>
+                                <p>Enterprise SQL vs Document flexibility</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="comparison-card" data-comparison="mysql-sqlite">
+                                <div class="card-header">
+                                    <h4>MySQL vs SQLite</h4>
+                                    <span class="category-badge">Database</span>
+                                </div>
+                                <p>Reliable workhorse vs Simple local storage</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Beginner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Providers -->
+                    <div class="category-section">
+                        <h3 class="category-title">Cloud & Hosting</h3>
+                        <div class="comparison-cards">
+                            <div class="comparison-card" data-comparison="vercel-netlify">
+                                <div class="card-header">
+                                    <h4>Vercel vs Netlify</h4>
+                                    <span class="category-badge">Hosting</span>
+                                </div>
+                                <p>Frontend-focused vs JAMstack specialist</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="comparison-card" data-comparison="aws-digitalocean">
+                                <div class="card-header">
+                                    <h4>AWS vs DigitalOcean</h4>
+                                    <span class="category-badge">Cloud</span>
+                                </div>
+                                <p>Enterprise powerhouse vs Developer-friendly</p>
+                                <div class="card-footer">
+                                    <span class="difficulty">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Requirements Form -->
+            <section id="requirements-view" class="view">
+                <div class="requirements-header">
+                    <button id="back-to-selection" class="back-btn">← Back to Comparisons</button>
+                    <h2 id="comparison-title">Comparison Title</h2>
+                    <p>Help us provide better recommendations by sharing your requirements (optional)</p>
+                </div>
+
+                <div class="requirements-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="budget">Budget</label>
+                            <select id="budget">
+                                <option value="">Not specified</option>
+                                <option value="low">Low (Free - $50/month)</option>
+                                <option value="medium">Medium ($50 - $200/month)</option>
+                                <option value="high">High ($200+/month)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="scale">Project Scale</label>
+                            <select id="scale">
+                                <option value="">Not specified</option>
+                                <option value="small">Small (Personal/Prototype)</option>
+                                <option value="medium">Medium (Small team/Startup)</option>
+                                <option value="large">Large (Enterprise/High traffic)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="performance">Performance Priority</label>
+                            <select id="performance">
+                                <option value="">Not specified</option>
+                                <option value="low">Low (Functionality first)</option>
+                                <option value="medium">Medium (Balanced)</option>
+                                <option value="high">High (Performance critical)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Your Experience</label>
+                            <select id="experience">
+                                <option value="">Not specified</option>
+                                <option value="beginner">Beginner (Learning)</option>
+                                <option value="intermediate">Intermediate (Some experience)</option>
+                                <option value="advanced">Advanced (Expert level)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button id="skip-requirements" class="btn btn-secondary">Skip & Compare</button>
+                        <button id="apply-requirements" class="btn btn-primary">Apply & Compare</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparison Results -->
+            <section id="comparison-view" class="view">
+                <div class="comparison-header">
+                    <button id="back-to-requirements" class="back-btn">← Back</button>
+                    <h2 id="result-title">Comparison Results</h2>
+                    <div class="header-actions">
+                        <button id="share-comparison" class="btn btn-outline">Share</button>
+                        <button id="export-comparison" class="btn btn-outline">Export</button>
+                    </div>
+                </div>
+
+                <!-- Recommendations Banner -->
+                <div id="recommendations-banner" class="recommendations-banner">
+                    <div class="recommendation-content">
+                        <h3>💡 Personalized Recommendation</h3>
+                        <p id="recommendation-text"></p>
+                    </div>
+                </div>
+
+                <!-- Side-by-side Comparison -->
+                <div class="comparison-container">
+                    <div class="option-column" id="option-a">
+                        <!-- Option A content will be populated by JavaScript -->
+                    </div>
+
+                    <div class="vs-divider">
+                        <div class="vs-circle">VS</div>
+                    </div>
+
+                    <div class="option-column" id="option-b">
+                        <!-- Option B content will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Trade-offs Section -->
+                <div class="tradeoffs-section">
+                    <h3>⚖️ Key Trade-offs</h3>
+                    <div id="tradeoffs-container">
+                        <!-- Trade-offs will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Bottom Actions -->
+                <div class="bottom-actions">
+                    <button id="new-comparison" class="btn btn-primary">Compare Something Else</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built to help developers make informed technology decisions • No single "best" answer, just balanced insights</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
