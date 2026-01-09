@@ -1,0 +1,162 @@
+# Tech Compare - Kiro Configuration
+
+## Project Overview
+Tech Compare is a clean, professional web application that helps developers make informed technology decisions through balanced comparisons and trade-off analysis. Built with vanilla JavaScript, it emphasizes simplicity, performance, and user experience.
+
+## Core Philosophy
+- **No single "best" answer** - Provide balanced insights rather than prescriptive solutions
+- **Clean & Professional** - Minimalist design focused on content
+- **Developer-Focused** - Built by developers, for developers
+- **Balanced Analysis** - Show trade-offs, pros, cons, and contextual recommendations
+
+## Architecture & Design Decisions
+
+### Technology Stack
+- **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
+- **Styling**: CSS Custom Properties for theming, Flexbox/Grid for layouts
+- **No Dependencies**: Zero external libraries for maximum performance and simplicity
+- **Progressive Enhancement**: Works without JavaScript for basic content
+
+### File Structure
+```
+tech-compare/
+├── index.html          # Main HTML structure with semantic markup
+├── styles.css          # Professional styling with CSS custom properties
+├── data.js             # Comparison data and processing logic
+├── app.js              # Interactive application functionality
+├── README.md           # Comprehensive documentation
+└── .kiro               # This configuration file
+```
+
+### Key Design Patterns
+1. **Module Pattern**: Each JS file has a clear, single responsibility
+2. **Data-Driven**: All comparisons stored in structured JSON-like objects
+3. **Progressive Enhancement**: Core functionality works without JS
+4. **Mobile-First**: Responsive design starting from mobile breakpoints
+5. **Performance-Optimized**: Intersection Observer for animations, minimal DOM manipulation
+
+## Development Guidelines
+
+### Code Style
+- **Semantic HTML**: Use proper HTML5 elements and ARIA labels
+- **CSS Custom Properties**: Use CSS variables for consistent theming
+- **Modern JavaScript**: ES6+ features, async/await, destructuring
+- **Consistent Naming**: kebab-case for CSS, camelCase for JavaScript
+- **Comments**: Document complex logic and design decisions
+
+### Adding New Comparisons
+1. **Research thoroughly** - Ensure balanced, accurate information
+2. **Follow data structure** - Use existing comparison objects as templates
+3. **Include all sections** - pros, cons, whenToChoose, matchesCriteria, tradeoffs
+4. **Test recommendations** - Verify the matching algorithm works correctly
+5. **Update categories** - Add new category sections if needed
+
+### Performance Considerations
+- **Vanilla JS**: No framework overhead, faster loading
+- **CSS-only animations**: Use transforms and opacity for smooth performance
+- **Lazy loading**: Intersection Observer for scroll-triggered animations
+- **Minimal DOM queries**: Cache DOM elements, avoid repeated queries
+- **Optimized images**: Use appropriate formats and sizes
+
+## Content Guidelines
+
+### Writing Style
+- **Balanced tone**: Avoid bias toward any technology
+- **Developer-focused**: Use technical language appropriately
+- **Practical insights**: Focus on real-world implications
+- **Concise clarity**: Clear, direct communication without fluff
+- **Evidence-based**: Back claims with concrete examples
+
+### Comparison Quality Standards
+- **Comprehensive coverage**: Include major pros, cons, and use cases
+- **Current information**: Keep data up-to-date with latest versions
+- **Practical scenarios**: Focus on real development situations
+- **Balanced perspective**: Show both sides fairly
+- **Actionable insights**: Help users make actual decisions
+
+## Feature Roadmap
+
+### Completed Features ✅
+- Side-by-side technology comparisons
+- Smart recommendation system based on requirements
+- Export functionality (Markdown reports)
+- Share functionality with direct links
+- Responsive design for all devices
+- Smooth animations and transitions
+- 9 comprehensive comparisons across 4 categories
+
+### Potential Enhancements 🚀
+- **More Comparisons**: Additional technology categories (testing frameworks, deployment tools, etc.)
+- **Advanced Filtering**: Filter comparisons by category, difficulty, or requirements
+- **Comparison History**: Save and revisit previous comparisons
+- **Community Contributions**: Allow user-submitted comparisons
+- **Interactive Scoring**: Let users weight criteria importance
+- **Detailed Metrics**: Add performance benchmarks and statistics
+- **Integration Guides**: Step-by-step setup instructions for chosen technologies
+
+## Maintenance Notes
+
+### Regular Updates Needed
+- **Technology versions**: Keep framework/library versions current
+- **Market trends**: Update job market and adoption statistics
+- **New technologies**: Add emerging tools and frameworks
+- **Community feedback**: Incorporate user suggestions and corrections
+
+### Testing Checklist
+- [ ] All comparisons load correctly
+- [ ] Recommendation system works with various requirement combinations
+- [ ] Export functionality generates proper markdown
+- [ ] Share links work correctly
+- [ ] Responsive design works on all screen sizes
+- [ ] Animations perform smoothly
+- [ ] No JavaScript errors in console
+
+## Deployment
+
+### Static Hosting
+The tool is designed for static hosting and works with:
+- **GitHub Pages**: Simple deployment from repository
+- **Netlify**: Automatic deployments with form handling
+- **Vercel**: Optimized for frontend applications
+- **Any web server**: Just serve the static files
+
+### Performance Optimization
+- **Minification**: Consider minifying CSS/JS for production
+- **Compression**: Enable gzip/brotli compression on server
+- **Caching**: Set appropriate cache headers for static assets
+- **CDN**: Use CDN for global performance if needed
+
+## Contributing
+
+### Code Contributions
+1. **Follow existing patterns**: Maintain consistency with current code style
+2. **Test thoroughly**: Ensure new features work across devices/browsers
+3. **Document changes**: Update README and comments as needed
+4. **Performance focus**: Maintain the lightweight, fast nature of the tool
+
+### Content Contributions
+1. **Research accuracy**: Verify all technical information
+2. **Balanced perspective**: Avoid bias toward specific technologies
+3. **Current relevance**: Ensure information reflects current state of technology
+4. **Practical value**: Focus on insights that help real decision-making
+
+## Success Metrics
+
+### User Experience Goals
+- **Fast loading**: < 2 seconds initial load time
+- **Smooth interactions**: 60fps animations and transitions
+- **Mobile-friendly**: Excellent experience on all devices
+- **Accessible**: Proper contrast ratios and semantic markup
+- **Intuitive**: Users can complete comparisons without instructions
+
+### Content Quality Goals
+- **Comprehensive**: Cover all major technology choices developers face
+- **Accurate**: Maintain up-to-date, factual information
+- **Balanced**: Provide fair, unbiased analysis
+- **Actionable**: Help users make actual technology decisions
+- **Valuable**: Save developers time and improve decision quality
+
+---
+
+**Built with ❤️ for the developer community**
+*Last updated: January 2026*
