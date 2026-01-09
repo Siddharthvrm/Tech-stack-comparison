@@ -159,7 +159,6 @@ MIT License - feel free to use this project for personal or commercial purposes.
 
 ## 🙏 Acknowledgments
 
-- Inspired by [neeranjan-bhardwaj's Tech Comparison Tool](https://github.com/neeranjan-bhardwaj/Kiro_project)
 - Built with the philosophy of helping developers make informed decisions
 - Designed for the developer community
 
@@ -172,5 +171,6 @@ If you find this tool helpful, please:
 - 🤝 Contribute improvements
 
 ---
+
 
 **Built to help developers make informed technology decisions • No single "best" answer, just balanced insights**
